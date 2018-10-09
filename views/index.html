@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<!-- Angular Declaration -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- Javacript -->
+		<script src="js/index.js"></script>
+	</head>
+	<body ng-app="indexApp" ng-controller="indexCtrl">
+		<H1>Enter file name to upload</H1>
+
+		<FORM ENCTYPE="multipart/form-data" ng-submit="addXMLFile()">
+		   <INPUT TYPE="file" id="XMLfile" NAME="filename" ng-model="index1.XMLfile">
+		   <INPUT TYPE="submit"  VALUE="upload">
+		</FORM>
+	</body> 
+</html>
